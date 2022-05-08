@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Principal */
+
+@import url('css/api.css');
+@import url('css/color.css');
+
+/* Skin 1 */
+
+@import url('css/nav.css');
+
+/* Navs/Menu */
+
+@import url('css/body.css');
+
+/* Active Skin*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

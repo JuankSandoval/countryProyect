@@ -1,0 +1,43 @@
+<div class="galeria w100 left bgc-banner"></div>
+<div class="backg-gray w100"></div>
+<section>
+    <div class="pad50">
+        <section class="border-section">
+
+            <div class="pad-caja-madre">
+                <input type="text" id="search-bar" [(ngModel)]="searchText" placeholder="search by country" #txtSearch class="left" />
+                <a>
+                    <i class="fas fa-search search-icon"></i>
+                </a>
+                <div class="select border right w20">
+                    <select matNativeControl [(ngModel)]="selectedOrder">
+                      <option value="">Filte by region</option>
+                      <option value="Africa">Africa</option>
+                      <option value="America">America</option>
+                      <option value="Asia">Asia</option>
+                      <option value="Europa">Europa</option>
+                      <option value="Oceania">Oceania</option>
+                    </select>
+                    <div class="select__arrow"></div>
+                </div>
+                <div class="w100 right ">
+                    <div class="grid-container">
+                        <div *ngFor="let country of dataCountry |filter:searchText | orderBy:selectedOrder:'region' ;let i = index  ">
+                            <div class="pad-caja-madre border">
+                                <a routerLink="/detail/{{country.name}}">
+                                    <img src="{{country.flag}}" class="w100">
+                                </a>
+                                <p class="pad10t center"><strong>{{country.name}}</strong></p>
+                                <div class="pad30t">
+                                    <p class="pad5t center"><strong>Population:</strong>{{country.population}}</p>
+                                    <p class="pad5t center"><strong>Region:</strong>{{country.region}}</p>
+                                    <p class="pad5t center"><strong>Capital:</strong>{{country.capital}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>

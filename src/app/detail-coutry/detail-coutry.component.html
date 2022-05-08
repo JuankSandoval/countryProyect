@@ -1,0 +1,49 @@
+<div class="galeria w100 left bgc-banner"></div>
+<div class="backg-gray w100"></div>
+<section>
+    <div class="pad-content">
+
+        <section class="border-section">
+            <div class="pad-caja-madre">
+                <div class="left pad10">
+                    <a routerLink="/country">
+                        <p class="editar-info right verti-ali">
+                            <img src="../../assets/image/flecha-volver.svg" alt="" style="height: auto !important;"> <strong><u> Back</u></strong>
+                        </p>
+                    </a>
+                </div>
+                <div class="w100 right pad50">
+                    <div class="">
+                        <div *ngFor="let country of dataDetailCountry;let i = index">
+                            <div class="w50 left pad30">
+                                <img src="{{country.flag}}" class="w100" style="height: auto !important;">
+                            </div>
+                            <div class="w50 right pad30">
+                                <h1 class="pad10t w100 left pad-tlt-h2-coti"><strong>{{country.nativeName}}</strong></h1>
+                                <div class="w50 left ">
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Population:.</strong>{{country.population}}</p>
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Region:</strong>{{country.region}}</p>
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Sub region:</strong>{{country.subregion}}</p>
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Capital:</strong>{{country.capital}}</p>
+                                </div>
+                                <div class="w50 left ">
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Top level Domain:</strong>{{country.topLevelDomain}}</p>
+                                    <p class="w100 left pad5t pad-tlt-h2-coti"><strong>Region:</strong>
+                                        <ng-container *ngFor="let currencie of country.currencies">{{currencie.name}} </ng-container>
+                                    </p>
+                                    <p *ngFor="let language of country.languages" class="w100 left pad5t pad-tlt-h2-coti"><strong>Sub region:</strong>
+                                        <ng-container *ngFor="let language of country.languages">{{language.name}} </ng-container>
+                                    </p>
+                                </div>
+
+                                <p class="w100 pad30t left pad5t pad-tlt-h2-coti"><strong>Population:</strong>
+                                    <ng-container *ngFor="let regionalBloc of country.regionalBlocs">{{regionalBloc.name}} </ng-container>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>

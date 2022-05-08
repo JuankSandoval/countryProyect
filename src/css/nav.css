@@ -1,0 +1,982 @@
+/*Css de los menus*/
+
+
+/* Menu Moviles */
+
+nav {
+    background: #3A373C;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Menu Secundario oculto */
+
+.menu-sup {
+    display: none;
+}
+
+.menu-sup li:hover {
+    color: #fff;
+}
+
+.logo {
+    display: none;
+}
+
+.logogif {
+    display: none;
+}
+
+
+/* Menu Principal */
+
+.logo-mobile {
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    display: block;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 9;
+    border-bottom: 2px solid #d0d0d0 !important;
+    -webkit-box-shadow: 0px 0px 15px #cecece;
+    -o-box-shadow: 0px 0px 15px #cecece;
+    -ms-box-shadow: 0px 0px 15px #cecece;
+    box-shadow: 0px 0px 15px #cecece;
+}
+
+.logo-mobile-login {
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    display: block;
+    padding: 5px 0;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 9;
+    border-bottom: 2px solid #d0d0d0 !important;
+    -webkit-box-shadow: 0px 0px 15px #cecece;
+    -ms-box-shadow: 0px 0px 15px #cecece;
+    -o-box-shadow: 0px 0px 15px #cecece;
+    box-shadow: 0px 0px 15px #cecece;
+}
+
+.logo-mobile img {
+    max-width: 130px;
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-bottom: 0px;
+}
+
+.logo-mobile-login img {
+    max-width: 215px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.hamburger-ico {
+    display: Block;
+    position: fixed;
+    top: 5px;
+    right: 4px;
+    color: #636060;
+    border: 0;
+    font-size: 30px !important;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 100;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.ham-ico {
+    font-size: 28px;
+}
+
+button.hamburger-ico:hover {
+    color: #9cca56;
+}
+
+.hamburger-close-ico {
+    display: none;
+    position: fixed;
+    top: 3px;
+    right: -26px;
+    color: #f51c2b;
+    border: 0;
+    font-size: 54px !important;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    line-height: 0;
+    background-color: #fff !important;
+    border-color: transparent !important;
+}
+
+.h-total-producto {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 1px;
+    right: 50px;
+    background-color: transparent;
+    border-right: 1px solid #ddd;
+}
+
+.h-total-producto-normal {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    position: fixed;
+    top: 185px;
+    right: 10px;
+}
+
+.h-total-producto2 {
+    top: 70px;
+}
+
+.tamano-carrito-icon {
+    font-size: 21px;
+    margin: 10px;
+}
+
+.filtro-productos {
+    font-size: 15px;
+    border-left: 1px solid #ddd;
+}
+
+.nav-main {
+    display: none;
+    z-index: 8;
+    font-weight: bold;
+    width: 100%;
+    background: #efefef;
+    position: fixed;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 48px;
+}
+
+.nav-main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    width: inherit;
+}
+
+.nav-main li {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    border-bottom: #dddddd 1px solid
+}
+
+.nav-main ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+    float: none
+}
+
+.nav-main li:hover {
+    display: block;
+}
+
+.nav-main2 {
+    display: block;
+    z-index: 8;
+    font-weight: bold;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 43px;
+}
+
+
+/* Paises */
+
+.country-dropdown {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    float: left;
+    margin: 2px 13px;
+}
+
+.country-dropdown .ico {
+    width: 13px
+}
+
+.dropbtn {
+    color: #fff;
+    padding: 7px 0px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6e6e6;
+    min-width: 120px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999999999;
+}
+
+.dropdown-content a {
+    padding: 8px 6px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.country-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*paises-mobile*/
+
+.country-mobile {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 140px;
+    z-index: 9999999999;
+}
+
+.country-mobile .dropbtn {
+    padding: 4px 4%;
+    margin-bottom: 0px;
+    width: 40px;
+    border-radius: 0
+}
+
+.nav-on-g a {
+    color: #9cca56 !important;
+}
+
+.menu-tools-micuenta.right {
+    display: none;
+}
+
+.show {
+    display: block!important;
+}
+
+.mar5l {
+    margin-left: 5px;
+}
+
+.tlt-side-cata-gray {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 5px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.tlt-side-catalogo {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 14px;
+    font-weight: normal;
+}
+
+.tlt-side-catalogo:hover {
+    text-decoration: underline;
+}
+
+.w-side-permanent-tienda.left {
+    width: 250px;
+}
+
+.w-side-permanent.left {
+    width: 300px;
+}
+
+.w-side-permanent-micuenta.left {
+    width: 300px;
+    min-height: 828px;
+}
+
+.micuenta-logeo .log-name::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    display: block
+}
+
+.micuenta-logeo .log-contrasena:before {
+    content: "\f13e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    display: block
+}
+
+.micuenta-logeo {
+    display: none;
+}
+
+.data-not {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.link-not {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(1, 154, 219, 1);
+}
+
+.bell-display {
+    position: fixed;
+    top: -500px;
+    right: 45px;
+    overflow: hidden;
+    z-index: 7;
+    background: #fff;
+    width: 280px;
+    box-shadow: 1px 8px 14px #00000080;
+    box-shadow: 1px 8px 14px #00000080;
+    webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    padding: 10px;
+    padding-top: 30px;
+    margin-top: -20px;
+}
+
+.bell-display.nav-fixed-bell {
+    margin-top: -90px;
+    padding-top: 50px;
+}
+
+.menu-tools-micuenta2.right.active {
+    cursor: pointer;
+}
+
+.bell-display-on {
+    top: 50px;
+    display: block!important
+}
+
+.bell-display-off {
+    top: -200px;
+    display: none !important
+}
+
+element.style {}
+
+.animate h4.left.tlt-side-catalogo.white.pad5 {
+    display: none;
+}
+
+.animate h2.left.tlt-filtro-sidebar.blue-csp.pad5 {
+    display: none;
+}
+
+.w10.left.espacio-logo.verti-ali.nav-main3.nav-fixed {
+    z-index: 36;
+}
+
+
+/* End Menu Moviles */
+
+
+/* ........... @ MEDIA QUERYS .......... */
+
+@media only screen and (min-width:768px)
+/* Tablet */
+
+{
+    /* Espacio Logo*/
+    .espacio-logo {
+        height: 100px;
+        margin-bottom: -100px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    /* Fin Espacio Logo*/
+    /* Boton Perfil Usuario*/
+    .b-circular {
+        height: 28px;
+        width: 30px !important;
+        background-color: #019DDE;
+        align-content: center;
+        border-radius: 150px;
+        border: 2px solid #ccc;
+        /*
+    font-size: 14px !important;
+    font-weight: 600 !IMPORTANT;
+*/
+    }
+    /* Fin Boton Perfil Usuario*/
+    /* Menu Moviles Oculto*/
+    .logo-mobile {
+        display: none;
+    }
+    .logo-mobile-login {
+        display: none;
+    }
+    .hamburger-ico {
+        display: none;
+    }
+    .hamburger-close-ico {
+        display: none;
+    }
+    .dropbtn {
+        background: #302d31;
+    }
+    .country-mobile .dropbtn {
+        width: 70px;
+    }
+    /*carrito*/
+    .h-total-producto {
+        min-height: 121px;
+        min-width: auto;
+        border-radius: 0;
+        position: absolute;
+        top: 2px;
+        right: -1px;
+        background-color: #9cca56;
+    }
+    .h-total-producto-normal {
+        min-height: 121px;
+        min-width: auto;
+        border-radius: 0;
+        position: unset;
+        top: 0;
+        right: 0;
+        position: relative;
+    }
+    /*carrito*/
+    /* Menu Secundario*/
+    .menu-sup {
+        background: #3A373C !important;
+        display: block;
+    }
+    .menu-sup li {
+        color: #B1B1B1;
+        float: left;
+        padding: 3px 11px;
+        box-sizing: border-box;
+        cursor: pointer;
+        line-height: 32px;
+        border-left: 1px solid #545456;
+    }
+    /* Menu Principal*/
+    .logo {
+        display: block;
+        width: 100%;
+        /*
+	margin-top: 10px;
+    margin-left: 16px;
+*/
+    }
+    .logogif {
+        display: block;
+        max-width: 260px;
+        margin-top: 12px;
+        margin-left: 16px;
+    }
+    .nav-main {
+        position: absolute;
+        font-weight: normal;
+        border-bottom: 1px solid #ccc;
+        background: #fff;
+        margin-top: 38px;
+        height: 62px;
+        z-index: 8;
+    }
+    .tamano-carrito-icon {
+        font-size: 35px;
+        margin: 4px;
+    }
+    .nav-main li {
+        width: 100%;
+        float: left;
+        display: block;
+        padding: 5px 0;
+        border-bottom: #dddddd 1px solid;
+    }
+    .nav-main ul {
+        width: auto;
+    }
+    .nav-main ul li {
+        float: left;
+        margin: 13px 15px;
+        border-bottom: none;
+        width: auto;
+        display: inline-block;
+        right: inherit;
+    }
+    .nav-main ul li a {
+        margin: 0px 5px;
+        float: left;
+        color: #5F6A7D;
+    }
+    .nav-main li:hover {
+        background-color: transparent;
+    }
+    .nav-main ul li a:hover {
+        color: #29ABE2;
+    }
+    i#btn-abrir-popup:hover {
+        color: #29ABE2;
+    }
+    /*Nav fixed*/
+    .nav-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        z-index: 100;
+        height: 50px;
+        -webkit-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -ms-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -o-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        width: 100%;
+    }
+    .nav-fixed .logo {
+        margin-top: 5px !important;
+    }
+    .nav-fixed .logogif {
+        margin-top: 2px !important;
+    }
+    .nav-main.nav-fixed ul li {
+        margin: 10px 5px;
+    }
+    .nav-fixed4 {
+        height: 50px;
+    }
+    .nav-fixed4 h3 {
+        display: none;
+    }
+    .nav-fixed-tienda {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        z-index: 100;
+        height: 50px;
+        -webkit-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -ms-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -o-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+    }
+    .nav-fixed-tienda .logo {
+        margin-top: 4px !important;
+    }
+    .nav-fixed-tienda .logogif {
+        margin-top: 2px !important;
+    }
+    .nav-main.nav-fixed-tienda ul li {
+        margin: 4px 8px;
+    }
+    /*Nav mi Nexsys*/
+    .menu-tools-micuenta.right {
+        display: block;
+    }
+    .menu-tools-micuenta.active {
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        /*	box-shadow: -1px 2px 12px #2d2d2d66;*/
+    }
+    .menu-tools-micuenta .buttons {
+        display: block;
+        height: 60px;
+    }
+    .menu-tools-micuenta .buttons .txtmenu {
+        padding-top: 1px;
+        margin-top: 13px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .txtmenu-fixed {
+        transition: all 100ms ease-in;
+        font-size: 15px !important;
+        margin-top: 8px !important;
+    }
+    .cuenta {
+        padding: 0 0 25px 0;
+        border-bottom: solid 1px #d4d3d3;
+        line-height: 1.5;
+    }
+    .menu-tools-micuenta .inicio-icon i {
+        margin-top: 100px;
+    }
+    .namecuenta {
+        /*    display: -webkit-box;*/
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 13px;
+    }
+    .namecuenta h3 {
+        font-size: 15px;
+    }
+    i.vermasi {
+        font-size: 13px;
+        position: absolute;
+        margin-left: -55px;
+        margin-top: 5px;
+        padding: 0 !important;
+    }
+    i.fa.vermasi.fa-minus-circle {
+        font-size: 13px;
+        position: absolute;
+        margin-left: -67px;
+        margin-top: 5px;
+    }
+    span#vermas {
+        z-index: 10;
+        margin-left: 19px;
+    }
+    .menu-tools-micuenta h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        float: left;
+        width: 100%;
+        margin-top: 1px;
+        padding: 0;
+        clear: none;
+    }
+    .menu-tools-micuenta p {
+        font-size: 14px;
+        float: left;
+        text-align: center;
+        /*width: 100%;*/
+    }
+    i.fa.fa-user-circle.left {
+        font-size: 40px;
+        color: #ccc;
+    }
+    /*.menu-tools-micuenta:hover h3, .menu-tools-micuenta:hover h2,.menu-tools-micuenta i.fa.fa-plus-circle:hover{ color:#29ABE2 !important; }*/
+    .buttons h3 {
+        text-align: center;
+        font-size: 13px;
+    }
+    .app {
+        color: #5F6A7D;
+        padding: 24px 15px;
+        margin-right: 40px;
+        cursor: pointer
+    }
+    .app:hover {
+        color: #009fe3;
+    }
+    .nav-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        -webkit-box-shadow: -15px 2px 53px 0px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: -15px 2px 53px 0px rgba(0, 0, 0, 0.34);
+        -ms-box-shadow: -15px 2px 53px 0px rgba(0, 0, 0, 0.34);
+        -o-box-shadow: -15px 2px 53px 0px rgba(0, 0, 0, 0.34);
+        box-shadow: -15px 2px 53px 0px rgba(0, 0, 0, 0.34);
+    }
+    .nav-fixed3 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999999999;
+        /*
+    -webkit-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.34);
+    -ms-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.34);
+    -o-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.34);
+    box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.34);
+*/
+    }
+    .nav-fixed-tienda {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        -webkit-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -ms-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        -o-box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+        box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.34);
+    }
+    .w10.left.espacio-logo.verti-ali.nav-main3 {
+        background-color: white;
+        z-index: 11;
+    }
+    .micuenta-logeo {
+        position: fixed;
+        top: 53px;
+        right: 0;
+        overflow: hidden;
+        display: none;
+        z-index: 1;
+        background: #fff;
+        width: 280px;
+        animation: fadeIn ease .8s;
+        -webkit-animation: fadeIn ease .8s;
+        -moz-animation: fadeIn ease .8s;
+        -o-animation: fadeIn ease .8s;
+        -ms-animation: fadeIn ease .8s;
+    }
+    .micuenta-logeo-on {
+        top: 53px !important;
+        box-shadow: 0px 0px 15px #00000070;
+        display: block;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .bell-display-on {
+        top: 100px;
+        display: block!important
+    }
+    .bell-display-off {
+        top: -200px;
+        display: none !important;
+    }
+    .micuenta-logeo-on.navfixed2 {
+        margin-top: -70px;
+    }
+    .micuenta-mov {
+        -webkit-animation-name: bounce;
+        -moz-animation-name: bounce;
+        -ms-animation-name: bounce;
+        -o-animation-name: bounce;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        -webkit-animation-iteration-count: 2;
+        -moz-animation-iteration-count: 2;
+        -ms-animation-iteration-count: 2;
+        -o-animation-iteration-count: 2;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -ms-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-name: bounce;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        right: 0;
+        z-index: 1;
+        background: #fff;
+        width: 280px;
+        position: fixed;
+    }
+    @-webkit-keyframes bounce {
+        from {
+            top: -200px;
+        }
+        to {
+            top: 40px;
+        }
+    }
+    .micuenta-logeo-on2 {
+        top: 110px !important;
+    }
+    .nav-fixed3 {
+        top: 35px !important;
+    }
+    .nav-fixed2 {
+        margin-top: 20px !important;
+    }
+    .micuenta-logeo-in {
+        padding: 20px 10px;
+        padding-top: 75px;
+    }
+    .micuenta-logeo input {
+        border: 0px;
+        background: #f4f4fa;
+        width: 100%;
+        padding: 8px 5px;
+        box-sizing: border-box;
+        margin: 5px 0;
+        padding-left: 30px;
+        outline: none
+    }
+    .micuenta-logeo .log-name:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f007";
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        display: block;
+    }
+    .micuenta-logeo .log-contrasena:before {
+        content: "\f13e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        display: block;
+    }
+    .micuenta-logeo .recuperar-ingreso {
+        text-align: center;
+        width: 100%;
+        border: 0;
+        background: none;
+        text-decoration: underline
+    }
+    .micuenta-logeo .ingreso {
+        width: 100%;
+        background: #9cca56;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #9cca56;
+        border-radius: 0
+    }
+    .micuenta-logeo .ingreso:hover {
+        background: #fff;
+        color: #9cca56;
+    }
+    .micuenta-logeo .nuevo-canal {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        background: #898989;
+        color: #fff;
+        border: 0;
+        border-radius: 0
+    }
+    .micuenta-logeo .nuevo-canal:hover {
+        text-decoration: underline;
+    }
+    .micuenta-logeo .cerrar {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        background-color: #535353;
+        color: #fff;
+        border: 0;
+        border-radius: 0
+    }
+    .micuenta-logeo .cerrar:hover {
+        background-color: #DC1114;
+        text-decoration: underline;
+    }
+    /*.w-side-permanent-tienda { width: 250px; }*/
+    .w-side-permanent {
+        width: 300px;
+    }
+    .top-on {
+        filter: contrast(1) !important;
+    }
+}
+
+@media only screen and (min-width:1025px)
+/* Portatil*/
+
+{
+    .logo {
+        max-width: 160px;
+        /*margin-top: 5px; margin-left: 16px; */
+    }
+    .logogif {
+        max-width: 260px;
+        margin-top: 15px;
+        margin-left: 16px;
+    }
+    /*.menu-tools-micuenta.active {width: 160px;}*/
+    .nav-fixed .logo {
+        margin-top: 0px !important;
+        max-width: 150px;
+        transition: all 100ms ease-in;
+    }
+    .nav-fixed .logogif {
+        margin-top: 2px !important;
+        max-width: 170px;
+    }
+    .nav-fixed-tienda .logo {
+        margin-top: 4px !important;
+        max-width: 160px;
+        transition: all 100ms ease-in;
+    }
+    .nav-fixed-tienda .logogif {
+        margin-top: 2px !important;
+        max-width: 170px;
+    }
+    .tamano-carrito-icon {
+        font-size: 40px;
+        margin: 0px;
+    }
+    .cambio-float {
+        float: left !important;
+        width: 50%;
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width:1201px)
+/* PC*/
+
+{}
